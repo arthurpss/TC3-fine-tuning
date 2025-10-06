@@ -1,0 +1,8 @@
+pandas
+html5lib
+datasets
+transformers
+trl
+torch
+unsloth
+google-colab
