@@ -20,12 +20,3 @@ pip install -r requirements.txt
 ```
 ## Fluxo de uso
 Devido a limitações de recurso de processamento, o processo de Fine-tuning foi dividido em três notebooks diferentes. O primeiro [tratar-dados.ipynb](./tratar-dados.ipynb) é utilizado para limpar todos os dados considerados inválidos para o treinamento gerando um novo CSV, o segundo é o [transforma-em-json.ipynb](./transforma-em-json.ipynb) que tem como objetivo formatar os dados conforme solicitado pela LLM gerando um arquivo JSON como resultado. O terceiro notebook [treino-e-teste.ipynb](./treino-e-teste.ipynb) realiza o treinamento do modelo com os dados formatados, e em seguida faz o teste comparando o modelo treinado com o modelo base usado.
-
-Transformar dados
-Use transforma-em-json.ipynb para ler o(s) dataset(s) original(is) e convertê-los em formato JSON ou no formato requerido para o modelo.
-
-Tratar dados / pré-processamento
-Execute tratar-dados.ipynb para limpeza, tokenização, balanceamento, divisão em treino/validação/teste, etc.
-
-Treino e teste do modelo
-Use treino-e-teste.ipynb para configurar o modelo (definir hiperparâmetros, escolher arquitetura base, etc.), treinar, validar e finalmente testar o modelo.
