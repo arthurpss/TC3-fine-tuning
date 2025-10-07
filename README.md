@@ -19,4 +19,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 ## Fluxo de uso
-Devido a limitações de recurso de processamento, o processo de Fine-tuning foi dividido em três notebooks diferentes. O primeiro [tratar-dados.ipynb](./tratar-dados.ipynb) é utilizado para limpar todos os dados considerados inválidos para o treinamento gerando um novo CSV, o segundo é o [transforma-em-json.ipynb](./transforma-em-json.ipynb) que tem como objetivo formatar os dados conforme solicitado pela LLM gerando um arquivo JSON como resultado. O terceiro notebook [treino-e-teste.ipynb](./treino-e-teste.ipynb) realiza o treinamento do modelo com os dados formatados, e em seguida faz o teste comparando o modelo treinado com o modelo base usado.
+Devido a limitações de recurso de processamento, o processo de Fine-tuning foi dividido em três notebooks diferentes. 
+- [tratar-dados.ipynb](./tratar-dados.ipynb) é utilizado para limpar todos os dados considerados inválidos para o treinamento gerando um novo CSV.
+- [transforma-em-json.ipynb](./transforma-em-json.ipynb) tem como objetivo formatar os dados conforme solicitado pela LLM gerando um arquivo JSON como resultado.
+- [treino-e-teste.ipynb](./treino-e-teste.ipynb) realiza o treinamento do modelo com os dados formatados, e em seguida faz o teste comparando o modelo treinado com o modelo base usado.
